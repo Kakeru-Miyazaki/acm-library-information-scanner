@@ -1,0 +1,16 @@
+{
+    "name": "acm-library-information-scanner",
+    "version": "1.0",
+    "description": "copy essential information from ACM library",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://dl.acm.org/doi/*",
+                "https://dl-acm-org.utokyo.idm.oclc.org/doi/*"
+            ],
+            "js": ["js/content.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
